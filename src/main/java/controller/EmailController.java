@@ -1,30 +1,39 @@
 package com.example.emailsender.controller;
 
-import com.example.emailsender.service.EmailService;  // Ensure this import matches your service package
+import com.example.emailsender.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.springframework.web.servlet.ModelAndView;
 
-@RestController
+
+@Controller
 public class EmailController {
-
-    private static final Logger logger = LoggerFactory.getLogger(EmailController.class);
 
     @Autowired
     private EmailService emailService;
 
-    @GetMapping("/sendEmail")
-    public String sendEmail(@RequestParam(defaultValue = "test@example.com") String to,
-                            @RequestParam(defaultValue = "Test Subject") String subject,
-                            @RequestParam(defaultValue = "Test Body") String body) {
-        // Log contextual information at the controller level
-        logger.info("Received request to send email to: {} with subject: '{}' and body: '{}'", to, subject, body);
+    // Display the email form page
+    @GetMapping("/send-email-form")
+    public String showEmailForm() {
+        return "send-email"; // This refers to the `send-email.html` template
+    }
 
+    // Handle form submission and send email
+    // Handle form submission and send email
+    @PostMapping("/sendEmail")
+    public ModelAndView sendEmail(@RequestParam String to,
+                                  @RequestParam String subject,
+                                  @RequestParam String body) {
         emailService.sendSimpleEmail(to, subject, body);
-        return "Email sent successfully!";
+
+        // Redirect to a success page after sending the email
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("email-success"); // email-success.html page
+        modelAndView.addObject("to", to);
+        return modelAndView;
     }
 }
