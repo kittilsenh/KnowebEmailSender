@@ -20,18 +20,20 @@ public class EmailService {
 
     public void sendSimpleEmail(String to, String subject, String body) {
         try {
+            // Add contextual information (email details) in the log
             logger.info("Attempting to send email to: {}", to);
+
             SimpleMailMessage message = new SimpleMailMessage();
             message.setTo(to);
             message.setSubject(subject);
             message.setText(body);
             mailSender.send(message);
+
+            // Log success with recipent details
             logger.info("Email sent successfully to: {}", to);
         } catch (Exception e) {
-            logger.error("Error while sending email to: {} - Error: {}", to, e.getMessage());
-            e.printStackTrace();
+            // Log the error with contextual information
+            logger.error("Error while sending email to: {} - Error: {}", to, e.getMessage(), e);
         }
     }
 }
-
-

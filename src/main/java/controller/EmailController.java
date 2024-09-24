@@ -21,7 +21,9 @@ public class EmailController {
     public String sendEmail(@RequestParam(defaultValue = "test@example.com") String to,
                             @RequestParam(defaultValue = "Test Subject") String subject,
                             @RequestParam(defaultValue = "Test Body") String body) {
-        logger.info("Received request to send email to: {}", to);
+        // Log contextual information at the controller level
+        logger.info("Received request to send email to: {} with subject: '{}' and body: '{}'", to, subject, body);
+
         emailService.sendSimpleEmail(to, subject, body);
         return "Email sent successfully!";
     }
