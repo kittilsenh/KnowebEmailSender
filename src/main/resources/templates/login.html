@@ -1,3 +1,4 @@
+<!-- login.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,14 +9,17 @@
 <form action="/login" method="POST">
     <div>
         <label>Username:</label>
-        <input type="text" name="username"/>
+        <input type="text" name="username" required />
     </div>
     <div>
         <label>Password:</label>
-        <input type="password" name="password"/>
+        <input type="password" name="password" required />
     </div>
     <div>
         <button type="submit">Log in</button>
+    </div>
+    <div>
+        <p style="color:red;">${error}</p>
     </div>
 </form>
 </body>
