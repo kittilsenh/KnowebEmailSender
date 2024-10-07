@@ -6,21 +6,18 @@
 </head>
 <body>
 <h2>Please Log In</h2>
-<form action="/login" method="POST">
-    <div>
-        <label>Username:</label>
-        <input type="text" name="username" required />
-    </div>
-    <div>
-        <label>Password:</label>
-        <input type="password" name="password" required />
-    </div>
-    <div>
-        <button type="submit">Log in</button>
-    </div>
-    <div>
-        <p style="color:red;">${error}</p>
-    </div>
+<form action="/register" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <button type="submit">Register</button>
 </form>
+
 </body>
 </html>

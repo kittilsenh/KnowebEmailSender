@@ -17,7 +17,7 @@ public class SecurityConfig {
         http
                 .csrf().disable()  // Disable CSRF protection for testing, don't do this in production
                 .authorizeHttpRequests()
-                .requestMatchers("/send-email-form", "/sendEmail").permitAll()  // Allow access to these routes without authentication
+                .requestMatchers("/send-email-form", "/sendEmail", "/register", "/login").permitAll()  // Allow access to these routes without authentication
                 .anyRequest().authenticated()  // All other routes require authentication
                 .and()
                 .formLogin()
@@ -29,11 +29,11 @@ public class SecurityConfig {
         return http.build();
     }
 
+    // In-memory authentication for testing
     @Bean
     public UserDetailsService userDetailsService() {
-        UserDetails user = User.withDefaultPasswordEncoder()
-                .username("user")
-                .password("password")
+        UserDetails user = User.withUsername("user")
+                .password("{noop}password")  // {noop} disables password encoding
                 .roles("USER")
                 .build();
 
