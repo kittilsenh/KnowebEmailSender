@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class UserController {
@@ -14,35 +15,49 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    // Handle GET request to display login page
-    @GetMapping("/login")
-    public String showLoginPage() {
-        return "login";  // This should return the name of the login view (login.html)
+    // Show registration page
+    @GetMapping("/register")
+    public String showRegisterPage() {
+        return "register";  // Return the register.html view
     }
 
-    // Handle POST request to process login form
-    @PostMapping("/login")
-    public String login(@RequestParam String username, @RequestParam String password) {
-        System.out.println("Username: " + username);
-        System.out.println("Password: " + password);
-
-        // Create a new User object with the input values
+    // Handle registration form submission
+    @PostMapping("/register")
+    public String register(@RequestParam String username, @RequestParam String password) {
         User user = new User();
         user.setUsername(username);
         user.setPassword(password);
 
-        try {
-            // Save the user to the database
-            userService.saveUser(user);
-            System.out.println("User saved successfully: " + username);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        // Save user in the database
+        userService.saveUser(user);
 
-        return "redirect:/send-email";  // Redirect after login
+        return "redirect:/login";  // After registering, redirect to login page
     }
+
+    // Show login page
+    @GetMapping("/login")
+    public String showLoginPage() {
+        return "login";  // Return the login.html view
+    }
+
+    // Handle login form submission
+    @PostMapping("/login")
+    public String login(@RequestParam String username, @RequestParam String password, RedirectAttributes redirectAttributes) {
+        User user = userService.findUserByUsername(username);
+
+        if (user != null && user.getPassword().equals(password)) {
+            // If the user is found and the password matches, redirect to the send-email page
+            return "redirect:/send-email";
+        } else {
+            // If login fails, redirect back to login with an error message
+            redirectAttributes.addFlashAttribute("error", "Invalid username or password.");
+            return "redirect:/login";
+        }
+    }
+
+    // Existing send-email mapping
     @GetMapping("/send-email")
     public String showSendEmailPage() {
-        return "send-email";  // This will return the send-email.html view
+        return "send-email";  // Return the send-email.html view
     }
 }

@@ -2256,3 +2256,166 @@ This generated password is for development use only. Your security configuration
 2024-10-09 11:32:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-09 11:32:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-10-09 11:32:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-09 11:32:11 INFO  c.e.e.EmailSenderApplication - Starting EmailSenderApplication using Java 17.0.11 with PID 12516 (C:\Users\kitti\OneDrive\Internship\email-sender\target\classes started by kitti in C:\Users\kitti\OneDrive\Internship\email-sender)
+2024-10-09 11:32:11 DEBUG c.e.e.EmailSenderApplication - Running with Spring Boot v3.2.10, Spring v6.1.13
+2024-10-09 11:32:11 INFO  c.e.e.EmailSenderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-09 11:32:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-09 11:32:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2024-10-09 11:32:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-09 11:32:12 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-09 11:32:12 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-09 11:32:12 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-09 11:32:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-09 11:32:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 936 ms
+2024-10-09 11:32:12 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-09 11:32:12 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-10-09 11:32:12 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-09 11:32:12 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-09 11:32:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-09 11:32:13 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79308a2
+2024-10-09 11:32:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-09 11:32:13 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-09 11:32:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-09 11:32:13 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-09 11:32:13 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 56aca1ae-599e-432c-808a-061df0e207ae
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-09 11:32:13 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a587e84, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@622ba721, org.springframework.security.web.context.SecurityContextHolderFilter@40b01718, org.springframework.security.web.header.HeaderWriterFilter@3fe24670, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@663622b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5badeda0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b2f7527, org.springframework.security.web.access.ExceptionTranslationFilter@309e3f34, org.springframework.security.web.access.intercept.AuthorizationFilter@15c1b543]
+2024-10-09 11:32:13 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-09 11:32:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-10-09 11:32:13 INFO  c.e.e.EmailSenderApplication - Started EmailSenderApplication in 2.582 seconds (process running for 2.923)
+2024-10-09 11:32:19 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-09 11:32:19 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-09 11:32:19 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-09 11:32:19 DEBUG o.s.security.web.FilterChainProxy - Securing GET /login
+2024-10-09 11:32:19 DEBUG o.s.security.web.FilterChainProxy - Secured GET /login
+2024-10-09 11:32:19 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 11:32:29 DEBUG o.s.security.web.FilterChainProxy - Securing POST /login
+2024-10-09 11:32:29 DEBUG o.s.security.web.FilterChainProxy - Secured POST /login
+2024-10-09 11:32:29 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 11:32:29 DEBUG o.s.security.web.FilterChainProxy - Securing GET /send-email
+2024-10-09 11:32:29 DEBUG o.s.security.web.FilterChainProxy - Secured GET /send-email
+2024-10-09 11:32:29 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 11:32:50 DEBUG o.s.security.web.FilterChainProxy - Securing POST /sendEmail
+2024-10-09 11:32:50 DEBUG o.s.security.web.FilterChainProxy - Secured POST /sendEmail
+2024-10-09 11:33:10 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 11:33:10 DEBUG o.s.security.web.FilterChainProxy - Securing GET /email-success
+2024-10-09 11:33:10 DEBUG o.s.security.web.FilterChainProxy - Secured GET /email-success
+2024-10-09 11:33:10 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 11:45:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-09 11:45:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-09 11:45:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-09 11:47:02 INFO  c.e.e.EmailSenderApplicationTests - Starting EmailSenderApplicationTests using Java 17.0.11 with PID 27012 (started by kitti in C:\Users\kitti\OneDrive\Internship\email-sender)
+2024-10-09 11:47:02 DEBUG c.e.e.EmailSenderApplicationTests - Running with Spring Boot v3.2.10, Spring v6.1.13
+2024-10-09 11:47:02 INFO  c.e.e.EmailSenderApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-10-09 11:47:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-09 11:47:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+2024-10-09 11:47:03 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-09 11:47:03 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-10-09 11:47:03 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-09 11:47:03 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-09 11:47:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-09 11:47:04 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@254e9709
+2024-10-09 11:47:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-09 11:47:04 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-09 11:47:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-09 11:47:04 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-09 11:47:04 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 04db9981-7d47-4784-8c7d-6c963b45776a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-09 11:47:05 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73852720, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22854f2b, org.springframework.security.web.context.SecurityContextHolderFilter@4e789704, org.springframework.security.web.header.HeaderWriterFilter@706d2bae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e45fbd0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13047d3d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ae0a26, org.springframework.security.web.access.ExceptionTranslationFilter@1eb7ec59, org.springframework.security.web.access.intercept.AuthorizationFilter@f6bc75c]
+2024-10-09 11:47:06 INFO  c.e.e.EmailSenderApplicationTests - Started EmailSenderApplicationTests in 4.416 seconds (process running for 5.39)
+2024-10-09 11:47:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-09 11:47:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-09 11:47:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-09 11:47:16 INFO  c.e.e.EmailSenderApplication - Starting EmailSenderApplication using Java 17.0.11 with PID 8916 (C:\Users\kitti\OneDrive\Internship\email-sender\target\classes started by kitti in C:\Users\kitti\OneDrive\Internship\email-sender)
+2024-10-09 11:47:16 DEBUG c.e.e.EmailSenderApplication - Running with Spring Boot v3.2.10, Spring v6.1.13
+2024-10-09 11:47:16 INFO  c.e.e.EmailSenderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-09 11:47:16 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-09 11:47:16 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2024-10-09 11:47:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-09 11:47:17 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-09 11:47:17 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-09 11:47:17 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-09 11:47:17 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-09 11:47:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 924 ms
+2024-10-09 11:47:17 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-09 11:47:17 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-10-09 11:47:17 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-09 11:47:17 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-09 11:47:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-09 11:47:17 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a4e939a
+2024-10-09 11:47:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-09 11:47:17 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-09 11:47:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-09 11:47:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-09 11:47:18 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e5de00c2-738a-4ad8-aa79-6efb544fdf67
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-09 11:47:18 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@679f59f1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b5e1fc5, org.springframework.security.web.context.SecurityContextHolderFilter@3f87780b, org.springframework.security.web.header.HeaderWriterFilter@4d0b276e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@231d3ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@240f2efd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47ffa248, org.springframework.security.web.access.ExceptionTranslationFilter@53df7e67, org.springframework.security.web.access.intercept.AuthorizationFilter@10f397d0]
+2024-10-09 11:47:18 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-09 11:47:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-10-09 11:47:18 INFO  c.e.e.EmailSenderApplication - Started EmailSenderApplication in 2.592 seconds (process running for 2.844)
+2024-10-09 11:47:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-09 11:47:26 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-09 11:47:26 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-09 11:47:26 DEBUG o.s.security.web.FilterChainProxy - Securing GET /register
+2024-10-09 11:47:26 DEBUG o.s.security.web.FilterChainProxy - Secured GET /register
+2024-10-09 11:47:26 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 11:47:35 DEBUG o.s.security.web.FilterChainProxy - Securing POST /register
+2024-10-09 11:47:35 DEBUG o.s.security.web.FilterChainProxy - Secured POST /register
+2024-10-09 11:47:35 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 11:47:35 DEBUG o.s.security.web.FilterChainProxy - Securing GET /login
+2024-10-09 11:47:35 DEBUG o.s.security.web.FilterChainProxy - Secured GET /login
+2024-10-09 11:47:35 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 11:47:45 DEBUG o.s.security.web.FilterChainProxy - Securing POST /login
+2024-10-09 11:47:45 DEBUG o.s.security.web.FilterChainProxy - Secured POST /login
+2024-10-09 11:47:45 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 11:47:45 DEBUG o.s.security.web.FilterChainProxy - Securing GET /login
+2024-10-09 11:47:45 DEBUG o.s.security.web.FilterChainProxy - Secured GET /login
+2024-10-09 11:47:45 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 11:58:21 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m33s393ms233µs600ns).
+2024-10-09 12:02:58 DEBUG o.s.security.web.FilterChainProxy - Securing POST /login
+2024-10-09 12:02:58 DEBUG o.s.security.web.FilterChainProxy - Secured POST /login
+2024-10-09 12:02:58 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 12:02:58 DEBUG o.s.security.web.FilterChainProxy - Securing GET /send-email
+2024-10-09 12:02:58 DEBUG o.s.security.web.FilterChainProxy - Secured GET /send-email
+2024-10-09 12:02:58 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 12:05:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-09 12:05:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-09 12:05:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-09 12:05:16 INFO  c.e.e.EmailSenderApplicationTests - Starting EmailSenderApplicationTests using Java 17.0.11 with PID 8404 (started by kitti in C:\Users\kitti\OneDrive\Internship\email-sender)
+2024-10-09 12:05:16 DEBUG c.e.e.EmailSenderApplicationTests - Running with Spring Boot v3.2.10, Spring v6.1.13
+2024-10-09 12:05:16 INFO  c.e.e.EmailSenderApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-10-09 12:05:16 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-09 12:05:16 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+2024-10-09 12:05:17 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-09 12:05:17 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-10-09 12:05:17 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-09 12:05:17 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-09 12:05:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-09 12:05:18 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a89414e
+2024-10-09 12:05:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-09 12:05:18 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-09 12:05:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-09 12:05:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-09 12:05:19 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 76258184-001f-4fba-8001-fb556ffa4326
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-09 12:05:19 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7030b74c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27d6267e, org.springframework.security.web.context.SecurityContextHolderFilter@1835b783, org.springframework.security.web.header.HeaderWriterFilter@2a5efbb9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2459333a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bd7f686, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@512dc0e0, org.springframework.security.web.access.ExceptionTranslationFilter@37c5b8e8, org.springframework.security.web.access.intercept.AuthorizationFilter@7845ee8a]
+2024-10-09 12:05:19 INFO  c.e.e.EmailSenderApplicationTests - Started EmailSenderApplicationTests in 4.021 seconds (process running for 5.027)
+2024-10-09 12:05:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-09 12:05:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-09 12:05:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
