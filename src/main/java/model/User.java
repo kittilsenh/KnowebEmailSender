@@ -1,32 +1,11 @@
 package com.example.emailsender.model;
 
-import java.util.UUID;
-
 public class User {
-
-    private UUID id;
+    private Long id;  // Auto-increment
     private String username;
     private String password;
-    private String email;
 
-    // Constructors
-    public User() {}
-
-    public User(String username, String password, String email) {
-        this.username = username;
-        this.password = password;
-        this.email = email;
-    }
-
-    // Getters and setters
-    public UUID getId() {
-        return id;
-    }
-
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
+    // Ensure no default values are set here
     public String getUsername() {
         return username;
     }
@@ -42,12 +21,5 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }
+

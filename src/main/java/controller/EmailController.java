@@ -51,26 +51,6 @@ public class EmailController {
         }
     }
 
-    @PostMapping("/login")
-    public String login(@RequestParam("username") String username,
-                        @RequestParam("password") String password) {
-        try {
-            // Store username and password in the users table
-            String sql = "INSERT INTO users (username, password) VALUES (?, ?)";
-            jdbcTemplate.update(sql, username, password);
-
-            // Redirect to the email sending form after successful login
-            return "redirect:/send-email-form";
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "error"; // Handle the error as appropriate
-        }
-    }
-
-
-
-
-
     // Add a mapping for the email success page
     @GetMapping("/email-success")
     public String emailSuccess() {
