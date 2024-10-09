@@ -2,20 +2,17 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Send Email</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
 </head>
 <body>
-<h1>Send an Email</h1>
-<form th:action="@{/sendEmail}" method="post">
-    <label for="toAddress">To:</label>
-    <input type="email" id="toAddress" name="toAddress" required>
-    <br>
-    <label for="subject">Subject:</label>
-    <input type="text" id="subject" name="subject" required>
-    <br>
-    <label for="body">Message:</label>
-    <textarea id="body" name="body" required></textarea>
-    <br>
-    <button type="submit">Send</button>
-</form>
+<div class="form-container">
+    <h2>Send an Email</h2>
+    <form th:action="@{/sendEmail}" method="post">
+        <input type="email" id="toAddress" name="toAddress" placeholder="Recipient Email" required>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        <textarea id="body" name="body" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
 </body>
 </html>

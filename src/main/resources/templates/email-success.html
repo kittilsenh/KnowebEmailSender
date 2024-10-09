@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Email Sent</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
 </head>
 <body>
-<h2>Email Sent Successfully!</h2>
-<p>The email has been sent to: ${to}</p>
+<div class="form-container">
+  <h2>Email Sent Successfully!</h2>
+  <!-- Use Thymeleaf to properly render the 'to' variable -->
+  <p>The email has been sent to: <strong th:text="${to}"></strong></p>
 
-<a href="/send-email-form">Send another email</a>
+  <a href="/send-email-form" class="btn-link">Send another email</a>
+</div>
 </body>
 </html>
