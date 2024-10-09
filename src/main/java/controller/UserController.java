@@ -45,14 +45,18 @@ public class UserController {
     public String login(@RequestParam String username, @RequestParam String password, RedirectAttributes redirectAttributes) {
         User user = userService.findUserByUsername(username);
 
-        if (user != null && user.getPassword().equals(password)) {
-            // If the user is found and the password matches, redirect to the send-email page
-            return "redirect:/send-email";
+        if (user != null) {
+            // Check if the password matches the hashed password
+            if (userService.checkPassword(user, password)) {
+                return "redirect:/send-email";  // Redirect on successful login
+            } else {
+                redirectAttributes.addFlashAttribute("error", "Invalid password.");
+            }
         } else {
-            // If login fails, redirect back to login with an error message
-            redirectAttributes.addFlashAttribute("error", "Invalid username or password.");
-            return "redirect:/login";
+            redirectAttributes.addFlashAttribute("error", "User not found.");
         }
+
+        return "redirect:/login";
     }
 
     // Existing send-email mapping
