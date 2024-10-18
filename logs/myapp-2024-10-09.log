@@ -2846,3 +2846,21 @@ This generated password is for development use only. Your security configuration
 2024-10-09 12:41:04 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/styles.css
 2024-10-09 12:41:04 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/styles.css
 2024-10-09 12:41:04 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 12:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /send-email-form
+2024-10-09 12:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /send-email-form
+2024-10-09 12:49:01 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 12:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/styles.css
+2024-10-09 12:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/styles.css
+2024-10-09 12:49:01 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 12:49:10 DEBUG o.s.security.web.FilterChainProxy - Securing GET /login
+2024-10-09 12:49:10 DEBUG o.s.security.web.FilterChainProxy - Secured GET /login
+2024-10-09 12:49:10 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 12:49:10 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/styles.css
+2024-10-09 12:49:10 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/styles.css
+2024-10-09 12:49:10 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 12:49:28 DEBUG o.s.security.web.FilterChainProxy - Securing GET /register
+2024-10-09 12:49:28 DEBUG o.s.security.web.FilterChainProxy - Secured GET /register
+2024-10-09 12:49:28 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-10-09 12:49:28 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/styles.css
+2024-10-09 12:49:28 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/styles.css
+2024-10-09 12:49:28 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
